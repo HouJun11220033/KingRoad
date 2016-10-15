@@ -51,6 +51,7 @@ int main(){
 			int nowP=Q.front();
 			Q.pop();
 			cnt++;
+			//去边就是去入读
 			for(int i=0;i<edge[nowP].size();i++)
 			{
 				//edge[nowP][i]
