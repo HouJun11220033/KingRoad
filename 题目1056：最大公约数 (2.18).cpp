@@ -1,7 +1,7 @@
 #include<stdio.h>
 using namespace std;
 int gcd(int a,int b){
-	//一直模，直到b等于0
+	//脪禄脰卤脛拢拢卢脰卤碌陆b碌脠脫脷0
 	if(b==0)
 	{
 		return a;
@@ -16,6 +16,7 @@ int main(){
 	int n,m,ans;
 	while(scanf("%d%d",&n,&m)!=EOF)
 	{
+		//14%49=14!!!!
 		ans=gcd(n,m);
 		printf("%d\n",ans);
 	}
