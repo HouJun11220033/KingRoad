@@ -1,5 +1,6 @@
 #include<stdio.h>
 using namespace std;
+//这个算法可以保证第一个数字总比第二个数字大
 int gcd(int a,int b){
 	//Ò»Ö±Ä££¬Ö±µ½bµÈÓÚ0
 	if(b==0)
