@@ -33,8 +33,8 @@ int main(){
 			scanf("%d",&m);
 			while(m--)
 			{
-				//ÇóÒ»¶ÑÊý×ÖµÄ×îÐ¡¹«±¶ÊýÊ±ºò£¬²»ÄÜÖ»ËãµÚÒ»¸öºóÃæµÄËùÓÐÊýµÄ³É¼¨ÄÇ²»ÊÇLCM
-				//Á©Á©Çó£¨Ç°Á½¸öÊýµÄ×îºó¹«±¶ÊýºÍºóÃæÄÇ¸öÊý½Ó×ÅÇó×îÐ¡¹«±¶Êý£©
+				//æ±‚ä¸€å †æ•°å­—çš„æœ€å°å…¬å€æ•°æ—¶å€™ï¼Œä¸èƒ½åªç®—ç¬¬ä¸€ä¸ªåŽé¢çš„æ‰€æœ‰æ•°çš„æˆç»©é‚£ä¸æ˜¯LCM
+				//ä¿©ä¿©æ±‚ï¼ˆå‰ä¸¤ä¸ªæ•°çš„æœ€åŽå…¬å€æ•°å’ŒåŽé¢é‚£ä¸ªæ•°æŽ¥ç€æ±‚æœ€å°å…¬å€æ•°ï¼‰
 				scanf("%d",&num);
 				ans=(first/gcd(first,num))*num;
 				first=ans;
