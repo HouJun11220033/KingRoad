@@ -10,22 +10,22 @@ Node* create(){
 	Tree[loc].lchild=Tree[loc].rchild=NULL;
 	return &Tree[loc++];
 }
-//²ÎÊıÊµ¼Ê¾ÍÊÇÒ»¸öNode½Úµã£¨T±íÊ¾Õâ¸ö½Úµã£¬x½«Òª²åÈëT->c£©[ÕâÊÇµ±T==NULLÊ±]
+//å‚æ•°å®é™…å°±æ˜¯ä¸€ä¸ªNodeèŠ‚ç‚¹ï¼ˆTè¡¨ç¤ºè¿™ä¸ªèŠ‚ç‚¹ï¼Œxå°†è¦æ’å…¥T->cï¼‰[è¿™æ˜¯å½“T==NULLæ—¶]
 Node* insert(Node* T,int x){
 	if(T==NULL)
 	{
 		T=create();
 		T->c=x;
-		return T;
+		return T;//è¿”å›æ–°åˆ›å»ºèŠ‚ç‚¹çš„åœ°å€ï¼ˆå½“å‰æ ‘çš„æ ¹èŠ‚ç‚¹ï¼‰
 	}else if(x<T->c){
 
-		//×óº¢×Ó½¨Á¢Íê³É£¬·µ»Ø×óº¢×ÓÖ¸Õë
+		//å·¦å­©å­å»ºç«‹å®Œæˆï¼Œè¿”å›å·¦å­©å­æŒ‡é’ˆ
 		T->lchild=insert(T->lchild,x);
 	}else if(x>T->c)
 	{
 		T->rchild=insert(T->rchild,x);	
 	}
-	return T;//·µ»Ø¸ù½ÚµãÖ¸Õë
+	return T;//è¿”å›æ•´æ£µæ ‘çš„æ ¹èŠ‚ç‚¹æŒ‡é’ˆ
 }
 void postOrder(Node* T){
 	if(T->lchild!=NULL)
@@ -70,9 +70,9 @@ int main()
 		Node* T=NULL;
 		for(int i=0;i<n;i++)
 		{
-			int x;//±ØĞëÉùÃ÷ÔÚÕâÀïÂğ£¿
+			int x;//å¿…é¡»å£°æ˜åœ¨è¿™é‡Œå—ï¼Ÿ
 			scanf("%d",&x);
-			//µ±i==1Ê±insert²ÎÊıÖĞµÄTÊÇ¸ù½Úµã£¬xÊÇĞòÁĞÖĞµÄµÚ¶ş¸öÊı×Ö 
+			//å½“i==1æ—¶insertå‚æ•°ä¸­çš„Tæ˜¯æ ¹èŠ‚ç‚¹ï¼Œxæ˜¯åºåˆ—ä¸­çš„ç¬¬äºŒä¸ªæ•°å­— 
 			T=insert(T,x);
 		}
 		preOrder(T);
