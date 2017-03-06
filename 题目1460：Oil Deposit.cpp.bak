@@ -17,7 +17,7 @@ int go[8][2]={
 void DFS(int x,int y){
 	int next_x,next_y;
 	
-	maze[x][y]='*';
+	//maze[x][y]='*';
 	for(int i=0;i<8;i++)
 	{
 		next_x=x+go[i][0];

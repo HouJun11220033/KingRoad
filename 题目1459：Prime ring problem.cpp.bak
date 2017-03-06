@@ -52,7 +52,7 @@ void DFS(int num){
 			hash[i]=true;
 			ans[num+1]=i;
 			DFS(num+1);
-			hash[i]=false;//当回溯回枚举该位数字时,将i重新标记为未使用
+			//hash[i]=false;//当回溯回枚举该位数字时,将i重新标记为未使用
 		}
 	}
 
